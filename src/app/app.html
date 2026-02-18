@@ -1,87 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Angular Shop</title>
+<!-- Navigation -->
+<header class="navbar">
+    <div class="logo"></div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Pink Pearl Necklace Shop</h2>
+        
+    </div>
+</section>
    
-</head>
-<body>
-
-    <!-- Header -->
-    <header>
-        <nav>
-            <h1>Pink Pearl Angular Shop</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <h2>Necklace Collection</h2>
-
-        <section class="products">
-            <div class="product-card">
-                <h3>Rose Gold Necklace</h3>
-                <p class="price">$39.99</p>
-                <button>Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <h3>Pearl Charm Necklace</h3>
-                <p class="price">$49.99</p>
-                <button>Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <h3>Crystal Heart Necklace</h3>
-                <p class="price">$29.99</p>
-                <button>Add to Cart</button>
-            </div>
-
-             <div class="product-card">
-                <h3>Pearl Charm Necklace</h3>
-                <p class="price">$49.99</p>
-                <button>Add to Cart</button>
-            </div>
-
-             <div class="product-card">
-                <h3>Pearl Charm Necklace</h3>
-                <p class="price">$49.99</p>
-                <button>Add to Cart</button>
-            </div>
-
-             <div class="product-card">
-                <h3>Pearl Charm Necklace</h3>
-                <p class="price">$49.99</p>
-                <button>Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <h3>Pearl Charm Necklace</h3>
-                <p class="price">$49.99</p>
-                <button>Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <h3>Pearl Charm Necklace</h3>
-                <p class="price">$49.99</p>
-                <button>Add to Cart</button>
-            </div>
-
-            
 
 
-        </section>
-    </main>
+<section class="products" id="products">
+    <router-outlet></router-outlet>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Pink Pearl Shop. All rights reserved.</p>
-    </footer>
 
-</body>
-</html>
+    <app-products></app-products>
+
+
+    <div class="product-grid">
+        
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Pink Pearl Necklace Shop | All Rights Reserved</p>
+</footer>
+
